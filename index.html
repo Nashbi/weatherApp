@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../weatherApp/assets/style.css">
+    <link rel="stylesheet" href="./assets/style.css">
     <title id="title">Weather API</title>
 </head>
 <body>
@@ -16,36 +16,58 @@
         <div class="container-fluid">
           <form class="d-flex">
             <input id="cityInput" class="form-control me-2" type="search" placeholder="Search for a City" aria-label="Search">
-            <button id="button" class="btn btn-outline-success" type="submit">Search</button>
+            <button id="button" class="btn btn-outline-success" type="button">Search</button>
           </form>
         </div>
     </nav>
-
+    
+    <div>
     <p id = "cityDetails" class="offset-md-3" style="padding: 10px; border: 2px solid black;">
     
     City
-
     </p>
+      <div class="date"></div>
+      <div class="temp"></div>
+      <div class="windSpeed"></div>
+      <div class="humidity"></div>
+
+
+    </div>
 
     <h3 class="offset-md-3"> 5 day Forecast: </h3>
 
     <div class="container">
         <div class="row">
-          <div id="dayOne" class="col order-1 col-md-3 offset-md-3">
-            First in DOM, no order applied
+          <div id="day0" class="col order-1 col-md-3 offset-md-3">
+              <div class="date"></div>
+              <div class="temp"></div>
+              <div class="windSpeed"></div>
+              <div class="humidity"></div>
           </div>
-          <div id="dayTwo" class="col order-2">
-            Second in DOM, with a larger order
+          <div id="day1" class="col order-2">
+            <div class="date"></div>
+              <div class="temp"></div>
+              <div class="windSpeed"></div>
+              <div class="humidity"></div>
           </div>
-          <div id="dayThree" class="col order-3">
-            Third in DOM, with an order of 1
+          <div id="day2" class="col order-3">
+            <div class="date"></div>
+            <div class="temp"></div>
+            <div class="windSpeed"></div>
+            <div class="humidity"></div>       
           </div>
-          <div id ="dayFour" class="col order-4">
-            Third in DOM, with an order of 1
-          </div>
-          <div id="dayFive" class="col order-5">
-            Third in DOM, with an order of 1
-          </div>
+          <div id ="day3" class="col order-4">
+            <div class="date"></div>
+            <div class="temp"></div>
+            <div class="windSpeed"></div>
+            <div class="humidity"></div>     
+           </div>
+          <div id="day4" class="col order-5">
+            <div class="date"></div>
+            <div class="temp"></div>
+            <div class="windSpeed"></div>
+            <div class="humidity"></div>   
+           </div>
         </div>
       </div>
 
@@ -53,7 +75,7 @@
 
 
 
-<script src="../weatherApp/assets/script.js">
+<script src="./assets/script.js">
 </script>
 </body>
 </html>
