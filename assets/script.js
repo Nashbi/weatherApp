@@ -1,3 +1,4 @@
+//Setting the global variables
 var cityInput = document.querySelector("#cityInput")
 var searchButton = document.querySelector("#button")
 var dayOne = document.querySelector("#dayOne")
@@ -42,11 +43,6 @@ searchButton.addEventListener('click', function(){
         date: date
       })
 
-      // document.querySelector('#day'+index+ ' .date').innerHTML = array[index].date
-      // document.querySelector('#day'+index+ ' .temp').innerHTML = array[index].temp
-      // document.querySelector('#day'+index+ ' .windSpeed').innerHTML = array[index].windSpeed
-      // document.querySelector('#day'+index+ ' .humidity').innerHTML = array[index].humidity
-
     }
 
     for (let index = 0; index < array.length; index++) {
@@ -83,22 +79,8 @@ function currentDay() {
         let windSpeed = data.wind['speed'];
         let humidity = data.main['humidity'];
 
-        document.querySelector('#cityDetails'+ ' .temp').innerHTML = "Temperature " + temp
-        document.querySelector('#cityDetails'+ ' .windSpeed').innerHTML = "Wind Speed " + windSpeed
-        document.querySelector('#cityDetails'+ ' .humidity').innerHTML = "Humidity " + humidity
+        document.querySelector('#cityDetails'+ ' .temp').innerHTML = "Temperature: " + temp
+        document.querySelector('#cityDetails'+ ' .windSpeed').innerHTML = "Wind Speed: " + windSpeed
+        document.querySelector('#cityDetails'+ ' .humidity').innerHTML = "Humidity: " + humidity
 
 })};
-
-
-
-// let cityName = data.city['name'];
-
-
-// array.push({
-//   cityName: cityName,
-//   temp: temp,
-//   windSpeed: windSpeed,
-//   humidity: humidity,
-//   date: date
-// })
-
