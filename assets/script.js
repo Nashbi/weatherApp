@@ -20,7 +20,7 @@ searchButton.addEventListener('click', function(){
 
   currentDay()
 
-  fetch('http://api.openweathermap.org/data/2.5/forecast?q='+cityInput.value+'&appid=6fb59f5601260e50d988485575bdc20d&units=imperial')
+  fetch('https://api.openweathermap.org/data/2.5/forecast?q='+cityInput.value+'&appid=6fb59f5601260e50d988485575bdc20d&units=imperial')
 
 
   .then (response => response.json())
