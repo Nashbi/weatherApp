@@ -1,4 +1,4 @@
-//Setting the global variables
+//Setting the global variables and grabbing each DOM element
 var cityInput = document.querySelector("#cityInput")
 var searchButton = document.querySelector("#button")
 var dayOne = document.querySelector("#dayOne")
