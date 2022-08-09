@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../weatherApp/assets/style.css">
+    <title id="title">Weather API</title>
+</head>
+<body>
+    
+      <h1 class="text-center" style="background-color:rgb(12, 96, 171)"> Weather Dashboard</h1>
+
+    <nav class="navbar navbar-light bg-light col-md-4">
+        <div class="container-fluid">
+          <form class="d-flex">
+            <input id="cityInput" class="form-control me-2" type="search" placeholder="Search for a City" aria-label="Search">
+            <button id="button" class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+
+    <p id = "cityDetails" class="offset-md-3" style="padding: 10px; border: 2px solid black;">
+    
+    City
+
+    </p>
+
+    <h3 class="offset-md-3"> 5 day Forecast: </h3>
+
+    <div class="container">
+        <div class="row">
+          <div id="dayOne" class="col order-1 col-md-3 offset-md-3">
+            First in DOM, no order applied
+          </div>
+          <div id="dayTwo" class="col order-2">
+            Second in DOM, with a larger order
+          </div>
+          <div id="dayThree" class="col order-3">
+            Third in DOM, with an order of 1
+          </div>
+          <div id ="dayFour" class="col order-4">
+            Third in DOM, with an order of 1
+          </div>
+          <div id="dayFive" class="col order-5">
+            Third in DOM, with an order of 1
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+<script src="../weatherApp/assets/script.js">
+</script>
+</body>
+</html>
